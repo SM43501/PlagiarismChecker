@@ -1,13 +1,13 @@
-Plagiarism-detector-using-machine-learning
-Introduction
+Plagiarism-detector-using-machine-learning<br>
+Introduction<br>
 Plagiarism detection is a crucial task in educational and professional settings. By leveraging machine learning techniques, we can create a robust plagiarism detector that can accurately identify copied content. This blog post walks you through the process of building a plagiarism detector from collecting the dataset to creating a Flask web application for easy use.
 
-Collecting the Dataset
+Collecting the Dataset<br>
 The first step in building our plagiarism detector is gathering a comprehensive dataset. The dataset should consist of text documents that contain both original and plagiarized content. You can find such datasets from online sources like Kaggle or create your own by manually collecting documents.
 
 Here, we use a hypothetical dataset containing pairs of text where each pair includes one original document and one plagiarized version. This dataset will help train our machine learning model to distinguish between original and copied content.
 
-Preprocessing the Data
+Preprocessing the Data<br>
 Before feeding the data into our machine learning model, we need to preprocess it. Preprocessing steps include:
 
 Tokenization: Splitting the text into individual words or tokens.
@@ -18,7 +18,7 @@ Removing Punctuation: Eliminating punctuation marks to avoid treating them as wo
 
 Stopwords Removal: Removing common words like "and", "the", etc., that do not contribute to the meaning of the text.
 
-Building the Machine Learning Model
+Building the Machine Learning Model<br>
 We use the Term Frequency-Inverse Document Frequency (TF-IDF) vectorizer to transform the text data into numerical features. Then, we train a model using these features. For this example, we will use a simple logistic regression model.
 
 Creating the Flask Web Application
